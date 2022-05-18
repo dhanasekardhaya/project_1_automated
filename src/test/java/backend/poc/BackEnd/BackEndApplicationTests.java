@@ -93,7 +93,6 @@ class BackEndApplicationTests {
 	{
 		Resource res1=new Resource(21001, "Manoj Kumar", new String[] {"React", "HTML"}, 50000, "Banaglor");
 		when(repo.save(res1)).thenReturn(res1);
-		
 		assertSame("Manoj Kumar", service.create(res1).getResName());
 	}
 	
