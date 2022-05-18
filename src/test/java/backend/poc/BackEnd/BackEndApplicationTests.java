@@ -86,7 +86,7 @@ class BackEndApplicationTests {
 		when(repo.save(res1)).thenReturn(res1);
 		assertSame("Manoj Kumar", service.create(res1).getResName());
 		
-		}
+	}
 	
 	@Test
 	public void testlist4()
